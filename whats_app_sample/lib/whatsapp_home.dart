@@ -37,6 +37,12 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
             new Tab(text: "CALLS",)
           ]
         ),
+        actions: <Widget>[
+          new Icon(Icons.search),
+          new Padding(padding: const EdgeInsets.symmetric(horizontal: 5.0)),
+          new Icon(Icons.more_vert),
+          new Padding(padding: const EdgeInsets.symmetric(horizontal: 5.0))
+        ],
       ),
       body: new TabBarView(
         controller: _tabController,
